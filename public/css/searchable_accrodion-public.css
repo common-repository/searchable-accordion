@@ -1,0 +1,49 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ div#nafs_accordion {
+    display: block;
+    width: 100%;
+    border: 1px dotted #cccccc;
+    border-radius: 3px;
+    padding: 10px 20px;
+}	
+div#nafs_accordion h3 {
+    display: block;
+    background: #cccccc;
+    padding: 3px 15px;
+    border-radius: 3px 3px 0 0;
+    margin: 0 0 5px 0;
+}
+div#nafs_accordion h3.header-active{margin-bottom:0;}
+div#nafs_accordion .accordion-content {
+    border: 1px solid #cccccc;
+    padding: 3px 15px;
+    border-radius: 0 0 3px 3px;
+    margin-bottom: 5px;
+}
+div#nafs_accordion h3:after {
+    content: "▼";
+    float: right;
+    color: #0e0e0e;
+}
+div#nafs_accordion h3.header-active:after {
+    content: "▲";
+}
+.content-default {
+    display: none;
+}
+.nafs_acc_control_wrap {
+    clear: both;
+    margin-bottom: 15px;
+}
+.nafs_acc_control_wrap input#nafs_acc_search, .nafs_acc_control_wrap select#nafs_acc_filter {
+    display: inline-block;
+    width: 41%;
+    height: 30px;
+    margin: 10px auto;
+}
+.nafs_acc_control_wrap select#nafs_acc_filter {
+    float: right;
+}
